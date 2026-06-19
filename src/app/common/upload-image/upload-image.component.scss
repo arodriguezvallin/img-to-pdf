@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border: 2px dashed #ccc;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin: -11.9rem 20rem 0rem 0rem;
+    padding: 5rem 0rem 5rem 0rem;
+
+    &.dragging {
+        border-color: #007bff;
+        background-color: #f0f8ff;
+    }
+}

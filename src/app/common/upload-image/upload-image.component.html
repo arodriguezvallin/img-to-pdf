@@ -1,0 +1,6 @@
+<div class="container" (click)="openSelectImages()" (dragover)="dragOver($event)" (drop)="drop($event)"
+    (dragenter)="dragEnter($event)" (dragleave)="dragLeave($event)" [class.dragging]="isDragging">
+    <input type="file" name="images" id="imageInput" accept="image/*" (change)="onChange($event)" multiple hidden
+        #imageInput>
+    <p>Haz click para subir una imagen o arrastra y suelta una imagen aquí</p>
+</div>

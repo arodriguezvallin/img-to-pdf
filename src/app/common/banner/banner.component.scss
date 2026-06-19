@@ -1,0 +1,46 @@
+.top-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 10px;
+    text-align: center;
+
+
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h1 {
+            color: white;
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        img {
+            height: 5rem;
+            margin-left: 10px;
+        }
+    }
+}
+
+//Añadir un breakpoint para dejar de mostrar la imagen del logo en pantallas pequeñas
+@media (max-width: 600px) {
+    .top-banner {
+        .logo {
+            h1 {
+                font-size: 2rem;
+            }
+
+            img {
+                display: none;
+            }
+        }
+    }
+}
