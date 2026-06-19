@@ -1,5 +1,5 @@
 @if (files.length > 0) {
-<p>Hola</p>
+<app-image-grid [imagesArray]="files"></app-image-grid>
 } @else {
 <app-upload-image (exportFile)="onExportFile($event)"></app-upload-image>
 }
