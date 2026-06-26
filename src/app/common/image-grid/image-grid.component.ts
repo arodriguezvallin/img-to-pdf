@@ -15,6 +15,7 @@ export class ImageGridComponent {
   //   return URL.createObjectURL(file);
   // }
 
+  // computed() caches the URLs and only recalculates when imagesArray changes, avoiding new object URLs on every render
   imageUrl = computed(() =>
     this.imagesArray()?.map((file) => URL.createObjectURL(file)),
   );
