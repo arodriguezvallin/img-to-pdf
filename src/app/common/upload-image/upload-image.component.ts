@@ -1,11 +1,11 @@
-import { Component, ElementRef, output, ViewChild } from '@angular/core';
+import { Component, ElementRef, output, ViewChild, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
-  selector: 'app-upload-image',
-  standalone: true,
-  imports: [],
-  templateUrl: './upload-image.component.html',
-  styleUrl: './upload-image.component.scss',
+    selector: 'app-upload-image',
+    imports: [],
+    templateUrl: './upload-image.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
+    styleUrl: './upload-image.component.scss'
 })
 export class UploadImageComponent {
   // ViewChild grabs a reference to the hidden <input #imageInput> in the template so we can control it from the class

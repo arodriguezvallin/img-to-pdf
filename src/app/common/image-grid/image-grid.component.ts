@@ -1,12 +1,12 @@
-import { Component, computed, input } from '@angular/core';
+import { Component, computed, input, ChangeDetectionStrategy } from '@angular/core';
 import { ImageContainerComponent } from '../image-container/image-container.component';
 
 @Component({
-  selector: 'app-image-grid',
-  standalone: true,
-  imports: [ImageContainerComponent],
-  templateUrl: './image-grid.component.html',
-  styleUrl: './image-grid.component.scss',
+    selector: 'app-image-grid',
+    imports: [ImageContainerComponent],
+    templateUrl: './image-grid.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
+    styleUrl: './image-grid.component.scss'
 })
 export class ImageGridComponent {
   imagesArray = input<File[]>();
